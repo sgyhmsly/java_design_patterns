@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Subject extends ISubject
 {
 
-    public Subject()
+    public Subject(String)
     {
         ob = new ArrayList<>();
     }
