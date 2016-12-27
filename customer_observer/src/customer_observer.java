@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 
 /**
  * Created by DT173 on 2016/12/26.
@@ -7,12 +7,12 @@ import java.util.ArrayList;
 // This is client class. Not a observer!
 public class customer_observer
 {
-    public static void main(String args[])
+    public static void main(final String args[])
     {
-        Subject mySubject = Subject.getInstance();
-        BinaryObserver oBObserver = new BinaryObserver();
-        JsonObserver oJObserver = new JsonObserver();
-        XmlObserver oXObserver = new XmlObserver();
+        final Subject mySubject = new Subject();
+        final BinaryObserver oBObserver = new BinaryObserver();
+        final JsonObserver oJObserver = new JsonObserver();
+        final XmlObserver oXObserver = new XmlObserver();
         mySubject.attach(oBObserver);
         mySubject.attach(oJObserver);
         mySubject.attach(oXObserver);

@@ -5,7 +5,7 @@ public abstract class Observer {
 
     protected Subject subject;
     public abstract void update();
-    public void registerSubject(Subject subject)
+    public void registerSubject(final Subject subject)
     {
         this.subject = subject;
     }

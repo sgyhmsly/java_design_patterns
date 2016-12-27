@@ -1,13 +1,10 @@
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by DT173 on 2016/12/26.
  */
-public final class Subject
+public class Subject extends ISubject
 {
-    private int state;
-    private final List<Observer> ob;
 
     public Subject()
     {
@@ -15,44 +12,45 @@ public final class Subject
     }
 
 
+    @Override
+    public String toString()
+    {
+        return "SubjectA";
+    }
 
-
-    public void attach(final Observer obj)
+    public void attach(Observer obj)
     {
         if(obj == null)
             return;
 
         if(!ob.contains(obj))
         {
-            obj.registerSubject(this);
             ob.add(obj);
-
         }
     }
-    public void detach(final Observer obj)
+    public void detach(Observer obj)
     {
 
         if(ob.contains(obj))
         {
-            obj.registerSubject(null);
             ob.remove(obj);
         }
     }
 
     public void notifyUpdate()
     {
-        for(final Observer tob:ob)
+        for(Observer tob:ob)
         {
-            tob.update();
+            tob.update(this);
         }
     }
 
-    public void setState(final int state)
+    public void setState(int state)
     {
         this.state = state;
-        // Any changes, let's nofity all.
         notifyUpdate();
     }
+
     public int getState()
     {
         return state;
