@@ -5,9 +5,11 @@ import java.util.ArrayList;
  */
 public class Subject extends ISubject
 {
+    private String identification;
+    public Subject(String id)
 
-    public Subject(String)
     {
+        identification = id;
         ob = new ArrayList<>();
     }
 
@@ -15,7 +17,7 @@ public class Subject extends ISubject
     @Override
     public String toString()
     {
-        return "SubjectA";
+        return identification;
     }
 
     public void attach(Observer obj)
