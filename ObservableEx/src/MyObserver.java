@@ -23,12 +23,15 @@ public class MyObserver implements Observer
         this.observable = observable;
         observable.addObserver(this);
     }
+
+
     @Override
     public void update(Observable o, Object arg)
     {
-        if(observable != o)
+        //Below three lines are unnecessary code. For double checking it's ok
+        //if(observable != o)
             //throw new Exception("Observer not expected");
-            return;
+          //  return;
         if(o instanceof Subject)
         {
             Subject tSubject = (Subject)o;
