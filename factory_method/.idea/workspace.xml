@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccecd2d1-6e33-46c9-b617-0c1634fc2c3e" name="Default" comment="">
+    <list default="true" id="ccecd2d1-6e33-46c9-b617-0c1634fc2c3e" name="Default" comment="finish the abstract factory method">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/factory_method/AbstractApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/factory_method/AbstractDocument.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/factory_method/PDFDocument.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/factory_method/PDF_Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/factory_method/WordDocument.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/factory_method/Word_Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/factory_method.java" afterPath="$PROJECT_DIR$/src/factory_method.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -161,7 +167,9 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -652,12 +660,20 @@
       <updated>1484631168958</updated>
       <workItem from="1484631171528" duration="2858000" />
       <workItem from="1484634117490" duration="7000" />
-      <workItem from="1484634127694" duration="921000" />
+      <workItem from="1484634127694" duration="1688000" />
     </task>
+    <task id="LOCAL-00001" summary="finish the abstract factory method">
+      <created>1484635074306</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1484635074306</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3786000" />
+    <option name="totallyTimeSpent" value="4553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -700,6 +716,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish the factory method" />
+    <MESSAGE value="finish the abstract factory method" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish the abstract factory method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
